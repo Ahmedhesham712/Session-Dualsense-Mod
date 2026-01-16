@@ -26,19 +26,22 @@ This mod brings **native DualSense support** to Session: Skate Sim on PC. It com
 
 ---
 
-## ⚠️ IMPORTANT: Disable Steam Input
-For this mod to work, the game must communicate directly with your DualSense. Steam Input blocks this connection.
-
-1.  Open your Steam Library.
-2.  Right-click on **Session: Skate Sim** -> **Properties**.
-3.  Go to the **Controller** tab.
-4.  In the dropdown menu, select **Disable Steam Input**.
+> [!IMPORTANT] Disable Steam Input
+> For this mod to work, the game must communicate directly with your DualSense. Steam Input blocks this connection.
+> 1.  Open your Steam Library.
+> 2.  Right-click on **Session: Skate Sim** -> **Properties**.
+> 3.  Go to the **Controller** tab.
+> 4.  In the dropdown menu, select **Disable Steam Input**.
 
 *(If your controller light turns off, just press the PS button to reconnect it).*
 
 ---
 
-## 📥 Installation
+
+### 📥 Installation
+
+> [!IMPORTANT]
+> **Prerequisite:** You must download and install **[ViGEmBus](https://github.com/nefarius/ViGEmBus/releases)** first. This is required for virtual controller input emulation.
 
 1.  Download the latest `session-dualsense-mod.zip` from **[Releases](https://github.com/rafaelvaloto/Session-Dualsense-Mod/releases/tag/v0.0.10)**.
 
