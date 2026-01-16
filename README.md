@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-# Gaming DualSense Native Mods
+# 🛹 Session: Skate Sim - Native DualSense Mod
 ### Audio Haptics & Adaptive Triggers (USB/Bluetooth)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -14,49 +14,73 @@
 
 </div>
 
----
 
-## 🚀 About The Project
+This mod brings **native DualSense support** to Session: Skate Sim on PC. It communicates directly with the controller to provide next-gen features via Bluetooth or USB, without requiring DS4Windows or paid software.
 
-This project brings **native DualSense Audio Haptics support over Bluetooth** to PC games using **[GamepadCore](https://github.com/rafaelvaloto/gamepad-core)**.
-
-Unlike other solutions that require paid software (like DSX) running in the background, this logic is **embedded directly into the game process**.
-
-### ✨ Key Features
-* 🔊 **Wireless Audio Haptics:** Captures game audio loopback via WASAPI and converts it to HD vibration in real-time. Works flawlessly over Bluetooth.
-* ⚡ **Zero Latency:** Direct communication with the controller's HID endpoints bypassing standard Windows driver limitations.
-* 🎮 **Plug & Play:** No complex configuration needed. Drop the files, launch the game.
+## ✨ Features
+* **Audio-Based Haptics:** Feel the texture of the ground, grinds, and impacts through the controller's voice coil actuators.
+* **Adaptive Triggers:**
+   * **Turning Resistance:** Triggers stiffen based on your board's inclination and truck tightness (turning physics).
+   * **Impact Feedback:** Reacts to landing heavy drops.
+* **Native Connection:** Works via standard Bluetooth or USB.
 
 ---
 
-## 🛹 Session: Skate Sim Mod (Special Edition)
+## ⚠️ IMPORTANT: Disable Steam Input
+For this mod to work, the game must communicate directly with your DualSense. Steam Input blocks this connection.
 
-A tailored experience specifically designed for *Session: Skate Sim*. This is not just a generic vibe; it hooks into the game's physics engine.
+1.  Open your Steam Library.
+2.  Right-click on **Session: Skate Sim** -> **Properties**.
+3.  Go to the **Controller** tab.
+4.  In the dropdown menu, select **Disable Steam Input**.
 
-### Features
-* **Trigger Resistance (Truck Physics):** The Adaptive Triggers stiffen dynamically to simulate the resistance of your skate trucks. The harder you turn, the harder the trigger gets.
-* **Texture Haptics:** Feel the pop of the board, the texture of the ground, and the impact of landing through high-definition audio haptics.
+*(If your controller light turns off, just press the PS button to reconnect it).*
 
-### 📥 Installation
-> [!IMPORTANT]
-> **Prerequisite:** You must download and install **[ViGEmBus](https://github.com/nefarius/ViGEmBus/releases)** first. This is required for virtual controller input emulation.
+---
 
-1.  Download the latest `session-dualsense-mod.zip` from **[Releases](../../releases)**.
-2.  Navigate to your game folder, typically located at:
-    `...\SessionGame\Binaries\Win64\`
-3.  Extract the contents of the zip file directly into this folder.
+## 📥 Installation
+
+1.  Download the latest `session-dualsense-mod.zip` from **Releases**.
+
+2.  Navigate to your game folder:
+   * **Steam:**
+     `...\SteamLibrary\steamapps\common\Session Skate Sim\SessionGame\Binaries\Win64\`
+   * **Epic Games:**
+     `...\Epic Games\SessionSkateSim\SessionGame\Binaries\Win64\`
+
+3.  **Extract the files:**
+   * **Option A: I use Illusory / Mod Manager:**
+     Copy **ONLY** the `UnrealModPlugins` folder into the directory above.
+     ❌ **DO NOT** overwrite/copy `dxgi.dll` (you already have it).
+
+   * **Option B: I don't use any mods:**
+     Copy **BOTH** `dxgi.dll` and the `UnrealModPlugins` folder into the directory above.
+
 4.  **Verify your folder structure:**
-
     ```text
     SessionGame\Binaries\Win64\
-    ├── dxgi.dll                 <-- The Loader
+    ├── dxgi.dll                 <-- The Loader (Only needed if you DON'T use Illusory)
     ├── session.exe              <-- Game Executable
     └── UnrealModPlugins\
         └── session-dualsense-mod.dll
     ```
 
-5.  Connect your DualSense (USB or Bluetooth) and launch the game!
+5.  Connect your DualSense, launch the game, and enjoy!
 
+## 🎧 Recommended Audio Settings (Critical for Haptics)
+Since this mod uses **Audio-Based Haptics**, the controller's vibration is driven directly by the game's sound frequency. To feel the texture of the ground (wood, concrete, brick) clearly, follow these steps:
+
+1.  Go to **Options > Audio**.
+2.  **Music Volume:** Turn it **DOWN** or completely **OFF** (0%).
+   * *Reason:* Loud music creates constant "noise" in the haptics, making it harder to feel the subtle wheel vibrations.
+3.  **SFX / Board / Environment Volume:** Keep these **HIGH** (80-100%).
+   * *Reason:* This ensures the "Surface Sounds" are the main source of vibration, giving you that crisp feeling of rolling over different terrains.
+
+## 🛠️ Compatibility
+* **Conflict Warning:** Do not use DS4Windows, DSX, or Steam Input simultaneously with this mod, as they will fight for control of the device.
+* **Safe to use with Illusory:** This mod is compatible with the Illusory Mod Unlocker loader.
+
+---
 
 ## 🛠️ For Developers: Build Your Own
 
